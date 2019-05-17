@@ -1,0 +1,30 @@
+{
+  "require": {
+    "esd/base-server":"~0.1",
+    "illuminate/view": "^5.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "ESD\\": "src/",
+      "ESD\\Examples\\": "examples/src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "tmtbe",
+      "email": "896369042@qq.com",
+      "homepage": "https://github.com/tmtbe"
+    }
+  ],
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.laravel-china.org"
+    }
+  },
+  "name": "esd/blade-plugin",
+  "type": "library",
+  "keywords": ["server", "swoole"],
+  "description": "esd/blade-plugin",
+  "license": "MIT"
+}
