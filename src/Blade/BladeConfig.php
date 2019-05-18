@@ -69,7 +69,6 @@ class BladeConfig extends BaseConfig
                 $this->addNamespace($bladeNamespace);
             }
         }
-        $this->namespace = $namespace;
     }
 
     public function addNamespace(BladeNamespaceConfig $bladeNamespaceConfig)
