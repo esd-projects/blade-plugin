@@ -9,7 +9,7 @@
 namespace ESD\Plugins\Blade;
 
 
-use ESD\BaseServer\Plugins\Config\BaseConfig;
+use ESD\Core\Plugins\Config\BaseConfig;
 
 class BladeConfig extends BaseConfig
 {

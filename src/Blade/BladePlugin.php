@@ -9,9 +9,9 @@
 namespace ESD\Plugins\Blade;
 
 
-use ESD\BaseServer\Server\Context;
-use ESD\BaseServer\Server\PlugIn\AbstractPlugin;
-use ESD\BaseServer\Server\Server;
+use ESD\Core\Context\Context;
+use ESD\Core\PlugIn\AbstractPlugin;
+use ESD\Core\Server\Server;
 
 class BladePlugin extends AbstractPlugin
 {
@@ -29,6 +29,7 @@ class BladePlugin extends AbstractPlugin
      * @param BladeConfig|null $bladeConfig
      * @throws \ReflectionException
      * @throws \DI\DependencyException
+     * @throws \DI\NotFoundException
      */
     public function __construct(?BladeConfig $bladeConfig = null)
     {
@@ -50,9 +51,12 @@ class BladePlugin extends AbstractPlugin
      * 初始化
      * @param Context $context
      * @return mixed
+     * @throws \DI\DependencyException
+     * @throws \DI\NotFoundException
+     * @throws \ESD\Core\Plugins\Config\ConfigException
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
-     * @throws \ESD\BaseServer\Server\Exception\ConfigException
-     * @throws \ESD\BaseServer\Exception
+     * @throws \ESD\Core\Exception
+     * @throws \Exception
      */
     public function beforeServerStart(Context $context)
     {
