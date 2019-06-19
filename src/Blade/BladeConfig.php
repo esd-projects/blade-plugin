@@ -32,7 +32,7 @@ class BladeConfig extends BaseConfig
     /**
      * @return string
      */
-    public function getCachePath(): string
+    public function getCachePath(): ?string
     {
         return $this->cachePath;
     }
@@ -40,7 +40,7 @@ class BladeConfig extends BaseConfig
     /**
      * @param string $cachePath
      */
-    public function setCachePath(string $cachePath): void
+    public function setCachePath(?string $cachePath): void
     {
         $this->cachePath = $cachePath;
     }
